@@ -1,0 +1,9 @@
+    
+.butonClick{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.butonClick> buton{
+    margin: 0.8rem 0;
+}

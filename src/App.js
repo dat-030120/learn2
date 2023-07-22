@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Box from './component/box';
+import Buton from './component/buton';
 
 function App() {
   const element = [
@@ -27,7 +28,10 @@ function App() {
     }
   ];
   const listElement = element.map((item, index) => {
-    return (<Box key={item.id} data={item} />);
+    return (
+    <Box key={item.id} data={item}>
+       <Buton data={item} />
+    </Box>);
   });
   return (
     <div className="container-fluid">
